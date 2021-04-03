@@ -36,10 +36,32 @@ body {
     margin:0px;
 }
 
-#contenido > div {
+#cabeza > ul > li> a:link, :visited, :active, :-webkit-any-link {
+    text-decoration: none;
+    color: indigo;
+}
+
+#frente {
     display: flex;
     flex-direction: column;
-    justify-content:right;
+    justify-content:center;
+    align-items: center;
+    margin:5px;
+    margin-bottom: 100px;
+    padding:5px;
+}
+
+#frase{
+    background-color: violet;
+    margin:0px;
+    padding:10px;
+    text-align: center;
+}
+
+#contenido > .social {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
     align-items: center;
     margin:5px;
     padding:5px;
@@ -55,7 +77,8 @@ body {
 footer {
     text-align: center;
     padding: 3px;
-    background-color: DarkSalmon;
+    background-color: violet;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: indigo;
-  }
+    margin-top: 10px;
+}
