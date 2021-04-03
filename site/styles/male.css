@@ -51,3 +51,11 @@ body {
     font-size: 20px;
     margin: 5px;
 }
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: indigo;
+  }
