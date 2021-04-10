@@ -1,12 +1,18 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
-    background-color:lightpink;
+    background: url("images/us.jpg") purple;
     margin:0px;
     padding:0px;
 }
 
 #cabeza > h1 {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: indigo;
+    color: white;
     font-weight: bolder;
     font-style: italic;
     text-align: center;
@@ -18,68 +24,51 @@ body {
 
 #cabeza > ul {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: indigo;
-    background-color: violet;
+    color:white;
+    font-size: 20px;
     margin:0px;
-    padding:10px;
+    padding:0px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    
+}
+
+#cabeza > ul > li {
+    transition: background-color .5s;
+    padding:10px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+#cabeza > ul > li:hover {
+    background-color: plum;
 }
 
 #cabeza {
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
-    background-color: lightpink;
+    
     margin:0px;
 }
 
 #cabeza > ul > li> a:link, :visited, :active, :-webkit-any-link {
     text-decoration: none;
-    color: indigo;
+    color: white;
 }
 
-#frente {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    margin:5px;
-    margin-bottom: 100px;
-    margin-top: 50px;
-    padding:5px;
-}
-
-#frase{
-    background-color: violet;
-    margin:0px;
-    padding:10px;
-    text-align: center;
-}
-
-#contenido > .social {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    margin:5px;
-    padding:5px;
-}
-
-#contenido > div > p {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: indigo;
-    font-size: 20px;
-    margin: 5px;
+#frontpage {
+    width: auto;
+    height: auto;
 }
 
 footer {
     text-align: center;
-    padding: 3px;
-    background-color: violet;
+    padding: 10px;
+    
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: indigo;
+    color: white;
     margin-top: 10px;
 }
